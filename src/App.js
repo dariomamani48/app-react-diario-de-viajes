@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+import Header from './components/header/Header';
 import './App.css';
+import Card from './components/Card/Card';
+import data from './components/data/data'
+import Footer from './components/Footer/Footer';
 
 function App() {
+  let travelData = data.map(item=>{
+    return (
+      <Card
+      key={item.title}
+      img= {item.imageUrl}
+      title={item.title}
+      location={item.location}
+      googleMaps={item.googleMapsUrl}
+      startDate={item.startDate}
+      endDate={item.endDate}
+      description={item.description}
+      ></Card>
+
+      
+    )
+  })
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header></Header>
+      <section>{travelData}</section>
+      <Footer></Footer>
     </div>
   );
 }

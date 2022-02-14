@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@500&family=Inter:wght@300&family=Montserrat&family=Roboto+Slab:wght@300&display=swap');
+
+
+.header{
+    background-color: #F55A5A;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+.header-icon{
+    font-size: 2rem;
+}

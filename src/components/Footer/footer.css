@@ -1,0 +1,55 @@
+.footer{
+    
+    background-color: #F55A5A;
+    width: 100vw;
+    padding-bottom: 10px;
+    
+}
+
+.footer-ul{
+    list-style: none;
+    color: white;
+    display: flex;
+    font-size: 2em;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+
+.footer-item{
+    color: rgb(255, 255, 255);
+    margin: 23px;
+}
+.footer-item:hover{
+    transition: all .4s ease-in;
+
+    color: #8F3333;
+}
+
+.firma{
+    font-size: .6em;
+}
+.firma .fas {
+    animation: infinite latido 2000ms alternate;
+    
+}
+
+@keyframes latido {
+    0% {
+        font-size: 0.67em;
+        color: rgb(187, 160, 8);
+    }
+    25%{
+        font-size: 1em;
+        color: rgb(201, 99, 4);
+    }
+    50%{
+        font-size: 0.67em;
+        color: rgb(201, 76, 4);
+    }
+    100% {
+        
+        font-size: 1em;
+        color: rgb(182, 3, 3);
+    }
+}
